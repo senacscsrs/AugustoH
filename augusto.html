@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nome=prompt("Qual é o seu nome?");
+        let distancia=parseInt(prompt("Qual é a distância em km que você deseja percorrer?"));
+        let media=parseInt(prompt("Qual é a média de velocidade do seu carro em km/h?"));
+        let combustivel=parseFloat(prompt("Qual é o preço do combustível por litro?"));
+        let consumo=parseFloat(prompt("Qual é o consumo do seu carro em km/litro?"));
+        let custo=distancia/consumo*combustivel;
+        let tempo=distancia/media;
+        let necessario=distancia/consumo;
+
+
+        alert("Olá " + nome + ", o custo da viagem é de R$" + custo.toFixed(2) + 
+              ", o tempo estimado para a viagem é de " + tempo.toFixed(2) + " horas, " +
+              "e você precisará de " + necessario.toFixed(2) + " litros de combustível.");
+    </script>
+</body>
+</html>
